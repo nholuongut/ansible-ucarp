@@ -1,0 +1,8 @@
+---
+# handlers file for ucarp
+
+- name: reload networking
+  service: name=networking state=reloaded
+
+- name: restart networking
+  service: name=networking state=restarted
